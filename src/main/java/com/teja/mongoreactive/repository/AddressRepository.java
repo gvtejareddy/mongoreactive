@@ -15,4 +15,6 @@ public interface AddressRepository extends ReactiveMongoRepository<Address, Stri
         "{_id:\"62263\"}"
       })
       Flux<Address> getAllAddress();
+
+    Flux<Address> findByCity(String city);
  }
