@@ -18,7 +18,6 @@ public class MongoreactiveApplication {
 	   @Autowired
     MongoClient mongoClient;
 
-    @SuppressWarnings("null")
 	@Bean
     public ReactiveMongoTemplate reactiveMongoTemplate() {
         return new ReactiveMongoTemplate(mongoClient, "local");
